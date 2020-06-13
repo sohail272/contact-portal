@@ -44,6 +44,7 @@ group :development, :test do
 
   # Letter opener to use email deliver in local browser
   gem "letter_opener"
+  gem 'rspec-rails', '~> 4.0.0'
 end
 
 group :development do
