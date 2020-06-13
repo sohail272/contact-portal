@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 		#redirect everything to /contact.
 		get '*path' => redirect('/contact')
 	end
+	
 	namespace :api, defaults: { format: 'json' } do
 		post '/save_contact', to: 'contacts#save_contact'
 	end

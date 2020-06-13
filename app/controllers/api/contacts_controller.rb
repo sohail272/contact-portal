@@ -1,5 +1,5 @@
 class Api::ContactsController < ApplicationController
-
+	
 	def save_contact
 		@contact = Contact.new(contact_params)
 
