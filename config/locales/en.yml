@@ -6,5 +6,8 @@ en:
       email: "Enter your email *"
       phone: "Enter phone number"
       message: "Message *"
+      address: "Address"
+      lets_talk: "Lets Talk"
+      general_support: "General Support"
     button:
       submit: "Send Message"
