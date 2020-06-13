@@ -1,0 +1,10 @@
+ms:
+  form:
+    title: "Hantarkan Mesej kepada Kami"
+    label:
+      name: "Beritahu kami nama anda *"
+      email: "Masukkan emel anda *"
+      phone: "Masukkan nombor telefon"
+      message: "Mesej *"
+    button:
+      submit: "Menghantar mesej"

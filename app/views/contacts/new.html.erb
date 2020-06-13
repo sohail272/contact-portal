@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V17</title>
+	<title>Contact Portal</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -38,10 +38,10 @@
 				<% end %>
 
 				<span class="contact100-form-title">
-					Send Us A Message
+					<%= t('form.title') %>
 				</span>
 
-				<%= f.label "firstname", "Tell us your name *", class: "label-input100" %><br />
+				<%= f.label "firstname", t('form.label.name'), class: "label-input100" %><br />
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
 					<%= f.text_field "firstname", class: "input100", placeholder: "First name" %>
 					<span class="focus-input100"></span>
@@ -51,26 +51,26 @@
 					<span class="focus-input100"></span>
 				</div>
 
-				<%= f.label "email", "Enter your email *", class: "label-input100" %>
+				<%= f.label "email", t('form.label.email'), class: "label-input100" %>
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<%= f.email_field "email", class: "input100", placeholder: "Eg. example@email.com" %>
 					<span class="focus-input100"></span>
 				</div>
 				
-				<%= f.label "phone", "Enter phone number", class: "label-input100" %>
+				<%= f.label "phone", t('form.label.phone'), class: "label-input100" %>
 				<div class="wrap-input100">
 					<%= f.text_field "phone", class: "input100", placeholder: "Eg. +1 800 000000" %>
 					<span class="focus-input100"></span>
 				</div>
 
-				<%= f.label "message", "Message *", class: "label-input100" %>
+				<%= f.label "message", t('form.label.message'), class: "label-input100" %>
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<%= f.text_area "message", class: "input100", placeholder: "Write us a message" %>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<%= f.submit "Send Message", class: "contact100-form-btn" %>
+					<%= f.submit t('form.button.submit'), class: "contact100-form-btn" %>
 				</div>
 
 

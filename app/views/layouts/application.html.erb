@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <nav> 
+      <%= link_to 'Contact Portal', root_path, class: "logo" %>
+      <ul> 
+        <li><%= link_to 'English', root_path(locale: :en) %></li>
+        <li>|</li>
+        <li><%= link_to 'Malay', root_path(locale: :ms) %></li> 
+      </ul> 
+    </nav>
     <%= yield %>
   </body>
 </html>

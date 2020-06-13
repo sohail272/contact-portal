@@ -1,3 +1,24 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	nav {
+		.logo {
+			float: left;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 15px;
+		}
+		ul {
+			float: right;
+			padding: 5px;
+			margin: 5px;
+			border: 1px solid;
+    		border-radius: 30px;
+			li {
+				float: left;
+				padding: 5px;
+			}
+		}
+	}
+}
