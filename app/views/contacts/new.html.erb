@@ -32,7 +32,7 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<%= form_for @contact, url: contact_path, html: { class: "contact100-form validate-form" } do |f| %>
+			<%= form_for @contact, url: api_save_contact_path, html: { class: "contact100-form validate-form" } do |f| %>
 				<% flash.each do |key, value| %>
 					<div class="wrap-input100 alert alert-<%= key %>"><%= value %></div>
 				<% end %>
