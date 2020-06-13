@@ -5,17 +5,15 @@ class Api::ContactsController < ApplicationController
 
 		if @contact.save
 	      	ContactsMailer.send_message(@contact).deliver
-	      	message = 'Details Successfully Submitted'
+	      	message = ["Details Successfully Submitted"]
 	      	flash[:success] = message
-	      	status = 200
 	    else
-	    	message = "Details Submission Failed"
+	    	message = @contact.errors.full_messages << "Details Submission Failed"
 	    	flash[:danger] = message
-	    	status = 400
 	    end
-	    # using redirect_to to show flash msg on the main page itself
-	    # render status: status, json: {contact: @contact, message: message}.to_json
-	    redirect_to contact_path
+	    # using redirect_to to redirect to contact_path instead of showing json response on web
+	    # render json: {contact: @contact, message: message}.as_json
+	    redirect_to @contact
 	end
 
 	private
